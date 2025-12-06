@@ -4,6 +4,9 @@
     --button-color: hsl(137, 74%, 64%);
     --button-hover-color: hsl(137, 74%, 74%);
     --button-active-color: hsl(137, 74%, 84%);
+    --clear-button-color: hsl(51, 86%, 66%);
+    --clear-button-hover-color: hsl(51, 86%, 76%);
+    --clear-button-active-color: hsl(51, 86%, 86%);
     --input-color: hsl(204, 100%, 90%);
     --input-hover-color: hsl(204, 100%, 95%);
     --delete-color: hsl(354, 95%, 59%);
@@ -53,18 +56,33 @@ h1, li {
 .inputs button {
     margin-left: 5px;
     cursor: pointer;
-    background-color: var(--button-color);
     font-weight: bold;
     border: none;
     border-radius: 5px;
 }
 
-.inputs button:hover {
+#submitBtn {
+    background-color: var(--button-color);
+}
+
+#submitBtn:hover {
     background-color: var(--button-hover-color);
 }
 
-.inputs button:active {
+#submitBtn:active {
     background-color: var(--button-active-color);
+}
+
+#clearBtn {
+    background-color: var(--clear-button-color);
+}
+
+#clearBtn:hover {
+    background-color: var(--clear-button-hover-color);
+}
+
+#clearBtn:active {
+    background-color: var(--clear-button-active-color);
 }
 
 ul {
