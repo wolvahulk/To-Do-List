@@ -117,7 +117,6 @@ ul button:active {
     }
 
     .inputs input {
-        height: 2vh;
-        width: 25vw;
+        width: 40vw;
     }
 }
