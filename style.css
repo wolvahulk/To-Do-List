@@ -33,6 +33,7 @@ h1, li {
     background-color: var(--app-color);
     color: var(--text-color);
     height: 90vh;
+    overflow-y: auto;
 }
 
 .inputs {
