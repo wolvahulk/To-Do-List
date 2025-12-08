@@ -123,9 +123,13 @@ ul button:active {
     background-color: var(--delete-active-color);
 }
 
-.done{
+.done {
     opacity: 0.4;
     color: hsl(0, 0%, 50%);
+    
+}
+
+.done span{
     text-decoration: line-through;
 }
 
