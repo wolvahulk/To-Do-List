@@ -1,10 +1,21 @@
 // To-Do App Logic:
+type taskObj = {
+    task: string;
+    done: boolean;
+}
 
-const input = document.getElementById("inputArea");
+const input = <HTMLInputElement>document.getElementById("inputArea");
 const button = document.getElementById("submitBtn");
 const clearBtn = document.getElementById("clearBtn");
-const list = document.getElementById("list");
-let tasks = [];
+const list = <HTMLUListElement>document.getElementById("list");
+let tasks: taskObj[] = [];
+
+function appInit() {
+
+    if(!input || !button || !clearBtn || !list){
+        console.error("no elements found!")
+        return
+    }
 
 button.addEventListener("click", () => {
 
@@ -37,7 +48,7 @@ clearBtn.addEventListener("click", () => {
     console.log(localStorage);
 });
 
-function manageTasks(data = null) {
+function manageTasks(data: taskObj | null = null) {
     const listItem = document.createElement("li");
 
     const liInput = document.createElement("input");
@@ -104,8 +115,11 @@ function loadTasks() {
 
         tasks.forEach((data) => {
             manageTasks(data);
-        })
+        });
     }
 }
 
 loadTasks();
+}
+
+appInit();
