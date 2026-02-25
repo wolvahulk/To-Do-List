@@ -1,0 +1,25 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "Built with assistance from the Internet, AI tools, and MDN Docs to learn JavaScript concepts like:\r - DOM manipulation\r - Event handling\r - localStorage API\r - Array methods and object references",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolvahulk/To-Do-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wolvahulk/To-Do-List/issues"
+  },
+  "homepage": "https://github.com/wolvahulk/To-Do-List#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
